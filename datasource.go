@@ -23,7 +23,7 @@ package sdk
 // http://docs.grafana.org/reference/http_api/#get-all-datasources
 type Datasource struct {
 	ID                uint        `json:"id"`
-	UID               uint        `json:"uid"`
+	UID               string      `json:"uid"`
 	OrgID             uint        `json:"orgId"`
 	Name              string      `json:"name"`
 	Type              string      `json:"type"`

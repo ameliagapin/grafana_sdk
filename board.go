@@ -83,7 +83,7 @@ type (
 		Type        string      `json:"type"`
 		Auto        bool        `json:"auto,omitempty"`
 		AutoCount   *int        `json:"auto_count,omitempty"`
-		Datasource  *string     `json:"datasource"`
+		Datasource  interface{} `json:"datasource"`
 		Refresh     BoolInt     `json:"refresh"`
 		Options     []Option    `json:"options"`
 		IncludeAll  bool        `json:"includeAll"`
